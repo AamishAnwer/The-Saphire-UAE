@@ -10,8 +10,8 @@ export default function Layout({ children }) {
 				<GoogleTagManager gtmId="G-PX98FHVLJH" />
 				<Navbar />
 				{children}
-				<Footer />
-				<Support />
+				{/* <Footer />
+				<Support /> */}
 			</main>
 		</section>
 	);
