@@ -1,0 +1,557 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+main {
+	@apply max-w-[1600px] overflow-hidden;
+}
+
+h1 {
+	@apply text-center;
+}
+
+.clip {
+	clip-path: polygon(0 0, 75% 0%, 100% 20%, 100% 100%, 0 100%, 0% 50%);
+}
+
+/* Add this to your CSS file */
+.service-card {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	height: 463px;
+	/* Adjust as needed */
+}
+
+.service-card .service-image {
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	height: 50%;
+	/* Initial half height */
+	object-fit: cover;
+}
+
+.service-card:hover .service-image {
+	height: 100%;
+	/* Full height on hover */
+}
+
+.service-card .service-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	/* Center the text */
+}
+
+.service-card:hover .service-content {
+	top: 50%;
+	/* Move to the center of the card */
+	transform: translateY(-50%);
+	/* Center vertically in the card */
+}
+
+.cardcontent {
+	background: rgb(69, 67, 67);
+	background: radial-gradient(
+		circle,
+		rgba(69, 67, 67, 0.6937368697478992) 0%,
+		rgba(32, 31, 32, 0.6433167016806722) 100%
+	);
+	transition: all 0.5s ease-in-out;
+}
+.icon {
+	opacity: 0;
+}
+.cardcontent:hover .icon {
+	opacity: 100%;
+	transition: all 1s ease-in-out;
+}
+.text {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translateX(50px);
+}
+.cardcontent:hover .text {
+	transform: translateX(0);
+	transition: all 0.5s ease-in-out;
+}
+.opptext {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translateX(-50px);
+}
+.cardcontent:hover .opptext {
+	transform: translateX(0);
+	transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate-brightness {
+	0% {
+		filter: brightness(0.2);
+	}
+
+	100% {
+		filter: brightness(0.75);
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-in-left {
+	animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+@keyframes vibrate {
+	0%,
+	100% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+}
+
+/* get a quote button */
+.quote-btn {
+	transition: background-color 0.3s ease, transform 0.3s ease,
+		box-shadow 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Social Links */
+
+.social-icon {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+	transform: translateY(-5px) scale(1.1);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* icon footer */
+
+.icon-hover-3d {
+	transition: transform 200ms ease;
+}
+
+.icon-hover-3d:hover {
+	transform: scale(1.1);
+}
+
+.circle-gradient {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 779px;
+	height: 779px;
+	z-index: 0;
+	border-radius: 779px;
+	background: rgba(32, 96, 173, 0.4);
+	filter: blur(152px);
+}
+
+.circle-gradient-two {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 779px;
+	height: 779px;
+	background: rgba(32, 95, 173, 0.916);
+	filter: blur(120px);
+	border-radius: 50%;
+}
+
+.circle-gradient-three {
+	position: absolute;
+	top: 30%;
+	width: 330px;
+	height: 330px;
+	background: white;
+	filter: blur(150px);
+	border-radius: 50%;
+}
+
+.circle-gradient-four {
+	border-radius: 1218px;
+	background: rgba(32, 96, 173, 0.5);
+	filter: blur(152px);
+	width: 1218px;
+	height: 1218px;
+	position: absolute;
+	top: -20%;
+	border-radius: 100%;
+}
+
+.circle-gradient-five {
+	border-radius: 779px;
+	background: rgba(32, 96, 173, 0.5);
+	filter: blur(152px);
+	width: 779px;
+	height: 779px;
+	position: absolute;
+	top: -500%;
+}
+.circle-gradient-six {
+	border-radius: 999px;
+	background: rgba(32, 96, 173, 0.9);
+	filter: blur(100px);
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	bottom: -40%;
+}
+
+.footer {
+	z-index: 1 !important;
+	background: #010101;
+	background: -webkit-radial-gradient(circle, #010101 0%, #0a0b0b 100%);
+	background: radial-gradient(circle, #010101 0%, #0a0b0b 100%);
+}
+
+.footer container {
+	z-index: 111 !important;
+}
+
+/* For typing effect */
+
+@keyframes typingFirst {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes typingSecond {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.typing-effect-first {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typingFirst 8s steps(40, end) infinite, backInDown 2s 1;
+}
+
+/* @keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+	}
+
+	60% {
+		transform: translateY(-10px);
+	}
+} */
+
+.typing-effect-second {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typingSecond 8s steps(40, end) infinite, backInDown 2s 1;
+}
+
+.down-animation {
+	animation: backInDown 2s 1;
+}
+
+/* about us section */
+.perspective {
+	perspective: 1000px;
+}
+
+.image-hover-effect {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover-effect:hover {
+	transform: scale(1.1);
+	/* Scales the image to 110% of its original size */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/* Adds a shadow effect */
+}
+
+.yarl__portal {
+	margin: 70px !important;
+}
+
+.yarl__portal .yarl__container {
+	background-color: rgba(51, 65, 85, 0.3);
+	backdrop-filter: blur(4px);
+}
+
+@media screen and (max-width: 768px) {
+	.yarl__portal {
+		margin: 50px !important;
+		/* Adjust margin for smaller screens */
+	}
+}
+
+.cursor {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	position: absolute;
+	transition: transform 200ms ease-out;
+	animation: cursorAnim 0.5s infinite alternate, cursorAnim3 1.5s infinite;
+	pointer-events: none;
+	z-index: 9999;
+}
+
+.cursor::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border: 8px solid blue;
+	border-radius: 50%;
+	opacity: 0.8;
+	top: -4px;
+	left: -4px;
+	animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.7);
+	}
+}
+
+@keyframes cursorAnim2 {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.4);
+	}
+}
+
+@keyframes cursorAnim3 {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	50% {
+		transform: scale(1.5);
+		opacity: 0.7;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.expand {
+	transform: scale(3);
+	opacity: 0;
+	border: 1px solid red;
+}
+
+.cursor-dot {
+	width: 22px;
+	height: 22px;
+	background-color: lightslategray;
+}
+
+.cursor-outline {
+	width: 35px;
+	height: 35px;
+	border: 2px solid rgba(32, 95, 173, 0.725);
+}
+
+.cursor-dot {
+	position: fixed;
+	top: -20px;
+	left: -20px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 9999;
+	pointer-events: none;
+}
+
+.cursor-outline {
+	position: fixed;
+	top: -20px;
+	left: -20px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 9999;
+	pointer-events: none;
+}
+
+.whatsapp-animation:hover {
+	animation: tada;
+	/* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s;
+	/* don't forget to set a duration! */
+}
+
+/* tada animation on get a quote */
+
+@keyframes tada {
+	0% {
+		transform: scale(1);
+	}
+
+	10%,
+	20% {
+		transform: scale(0.9) rotate(-3deg);
+	}
+
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: scale(1.1) rotate(3deg);
+	}
+
+	40%,
+	60%,
+	80% {
+		transform: scale(1.1) rotate(-3deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(0);
+	}
+}
+
+.tada:hover {
+	animation: tada 1s ease;
+}
+
+.blur {
+	filter: blur(120px);
+}
+
+@keyframes blurAnimation {
+	from {
+		filter: blur(10px);
+	}
+	to {
+		filter: blur(0);
+	}
+}
+
+.blurEffect {
+	animation: blurAnimation 2s ease-in-out;
+}
+
+@layer utilities {
+	.border-gradient-blue {
+		border-image: linear-gradient(to right, #ffffff, #007bff);
+		border-image-slice: 1;
+	}
+}
+
+/* Add this section for navbar scrolling effect */
+.navbar {
+	transition: height 0.3s ease-in-out;
+	/* Ensure smooth height transition */
+}
+
+.navbar-scrolled {
+	height: 60px;
+	background-color: rgba(
+		72,
+		85,
+		99,
+		0.7
+	);
+	transition: all 150ms;
+}
+
+.modal-video {
+	background-color: rgba(51, 65, 85, 0.8) !important;
+}
+
+.modal-video-body {
+	max-width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+	.currlyline {
+		display: none;
+	}
+}
