@@ -39,13 +39,12 @@ const Modal = ({ isOpen, onClose }) => {
 
 	return (
 		<>
-			<div className=" rounded-lg">
+			<div className=" rounded-lg bg-transparent">
 				{isOpen && (
 					<motion.div
-						className="modal-overlay "
+						className="modal-overlay  "
 						style={{
 							display: isOpen ? "flex" : "none",
-							backgroundColor: "rgba(0,0,0,0.75)", // Change here for a semi-transparent black background
 
 							justifyContent: "center", // Center the modal content horizontally
 							alignItems: "center", // Center the modal content vertically

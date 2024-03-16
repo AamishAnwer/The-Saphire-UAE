@@ -1,15 +1,17 @@
 import Hero from "@/components/hero";
-import WhoWeAre from "@/components/whoWeAre";
-import Gradient from "@/components/gradient";
-import OurServices from "@/components/ourServices";
-import UltratecFourD from "@/components/ultratecFourD";
+// import WhoWeAre from "@/components/whoWeAre";
+// import Gradient from "@/components/gradient";
+// import OurServices from "@/components/ourServices";
+// import UltratecFourD from "@/components/ultratecFourD";
 import Head from "next/head";
-import Testimonials from "@/components/testimonials";
-import Client from "@/components/Client";
-import OurTechnologies from "@/components/ourTechnologies";
+// import Testimonials from "@/components/testimonials";
+// import Client from "@/components/Client";
+// import OurTechnologies from "@/components/ourTechnologies";
 import { useEffect, useState } from "react";
-import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
-// import HeroTwo from "../components/heroTwo";
+import HeroTwo from "../components/heroTwo";
+import heroThree from "../components/heroThree";
+import BodyCard from "../components/bodyCard";
+// import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 
 export default function Home() {
 	const [randomText, setRandomText] = useState("");
@@ -61,8 +63,17 @@ export default function Home() {
 					heroText={randomText}
 					isshowSubHeading={true}
 				/>
-				{/* <HeroTwo /> */}
-				<BackgroundGradientAnimation />
+
+				{/* <BackgroundGradientAnimation /> */}
+				<HeroTwo />
+				<BodyCard
+					src={
+						"https://res.cloudinary.com/dcpte972l/image/upload/v1710624834/roof_view_pgsird.jpg"
+					}
+					title={"Hello there"}
+					text={"heloosd lsdjfljlsd ljsdlfj lsjdfl lsjdflj ljd"}
+				/>
+				{/* <heroThree />
 				<WhoWeAre />
 				<Gradient className={"bg-gradient-to-b from-black to-[#2060AD]"} />
 				<OurServices />
@@ -75,7 +86,7 @@ export default function Home() {
 				<Client />
 				<Gradient className={"bg-gradient-to-b from-white to-[#2060AD] "} />
 				<Testimonials />
-				<UltratecFourD />
+				<UltratecFourD /> */}
 			</section>
 		</>
 	);
