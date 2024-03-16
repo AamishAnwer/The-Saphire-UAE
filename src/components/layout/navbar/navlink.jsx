@@ -34,7 +34,7 @@ export default function NavLink({
 		>
 			<Link
 				href={href}
-				className="text-center hover:text-blue-600 transition-all transform slide-in-left relative"
+				className="text-center hover:text-yellow-600 transition-all transform slide-in-left relative"
 			>
 				<p className="hover:cursor-pointer text-center max-lg:text-lg max-md:font-medium" onClick={onClick}>{children}</p>
 			</Link>
@@ -43,7 +43,7 @@ export default function NavLink({
 					imagesLength && open ? "block" : "hidden"
 				}`}
 			>
-				<div className="bg-slate-700 bg-opacity-30 border border-blue-500 backdrop-blur-sm w-fit px-12 rounded-md py-4 flex justify-center items-center gap-x-8">
+				<div className="bg-slate-700 bg-opacity-30 border border-yellow-500 backdrop-blur-sm w-fit px-12 rounded-md py-4 flex justify-center items-center gap-x-8">
 					{content &&
 						content?.length > 0 &&
 						content.map((data, index) => {

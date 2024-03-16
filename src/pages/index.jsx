@@ -9,6 +9,8 @@ import Testimonials from "@/components/testimonials";
 import Client from "@/components/Client";
 import OurTechnologies from "@/components/ourTechnologies";
 import { useEffect, useState } from "react";
+import { BackgroundGradientAnimation} from "../components/ui/background-gradient-animation"
+// import HeroTwo from "../components/heroTwo";
 
 export default function Home() {
 	const [randomText, setRandomText] = useState("");
@@ -60,6 +62,8 @@ export default function Home() {
 					heroText={randomText}
 					isshowSubHeading={true}
 				/>
+				{/* <HeroTwo /> */}
+				<BackgroundGradientAnimation />
 				<WhoWeAre />
 				<Gradient className={"bg-gradient-to-b from-black to-[#2060AD]"} />
 				<OurServices />
