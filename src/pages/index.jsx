@@ -2,14 +2,13 @@ import Hero from "@/components/hero";
 import WhoWeAre from "@/components/whoWeAre";
 import Gradient from "@/components/gradient";
 import OurServices from "@/components/ourServices";
-import FeaturedProjects from "@/components/featuredProjects";
 import UltratecFourD from "@/components/ultratecFourD";
 import Head from "next/head";
 import Testimonials from "@/components/testimonials";
 import Client from "@/components/Client";
 import OurTechnologies from "@/components/ourTechnologies";
 import { useEffect, useState } from "react";
-import { BackgroundGradientAnimation} from "../components/ui/background-gradient-animation"
+import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 // import HeroTwo from "../components/heroTwo";
 
 export default function Home() {
@@ -70,7 +69,6 @@ export default function Home() {
 				<Gradient
 					className={"bg-gradient-to-b from-[#1259b09f] to-[#2060AD] "}
 				/>
-				<FeaturedProjects />
 
 				<Gradient className={"bg-gradient-to-b from-[#2060AD] to-white "} />
 				<OurTechnologies />

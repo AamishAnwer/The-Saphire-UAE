@@ -1,16 +1,16 @@
 "use client";
-import { cn } from "../utils/cn"; 
+import { cn } from "../utils/cn";
 import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-	gradientBackgroundStart = "rgb(108, 0, 162)",
-	gradientBackgroundEnd = "rgb(0, 17, 82)",
-	firstColor = "18, 113, 255",
-	secondColor = "221, 74, 255",
-	thirdColor = "100, 220, 255",
-	fourthColor = "200, 50, 50",
-	fifthColor = "180, 180, 50",
-	pointerColor = "140, 100, 255",
+	gradientBackgroundStart = "rgb(255, 235, 59)", // Light Yellow
+	gradientBackgroundEnd = "rgb(255, 255, 255)", // White
+	firstColor = "255, 235, 59", // Bright Yellow
+	secondColor = "255, 245, 157", // Lighter Yellow
+	thirdColor = "255, 255, 224", // Very Light Yellow (Near White)
+	fourthColor = "255, 250, 205", // Lemon Chiffon, Soft Yellow
+	fifthColor = "255, 255, 255", // White
+	pointerColor = "255, 255, 140", // Light Yellow for Pointer
 	size = "80%",
 	blendingValue = "hard-light",
 	children,
