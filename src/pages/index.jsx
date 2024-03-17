@@ -7,8 +7,9 @@ import HeroTwo from "../components/heroTwo";
 import heroThree from "../components/heroThree";
 import BodyCard from "../components/bodyCard";
 import HomeGrid from "../components/home/grid";
-
 import TextImage from "../components/textImage";
+import About from "../components/About";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	const [randomText, setRandomText] = useState("");
@@ -65,6 +66,8 @@ export default function Home() {
 				<HeroTwo />
 				<HomeGrid />
 				<TextImage />
+				<About />
+				<Footer />
 			</section>
 		</>
 	);
