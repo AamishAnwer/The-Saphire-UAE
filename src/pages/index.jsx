@@ -46,13 +46,8 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>
-					3D Printing Dubai | Avail 3D Printing Service in Dubai With Ultratec
-				</title>
-				<meta
-					name="description"
-					content="Ultratec 3D, the premier 3D printing company in Dubai, provides high-quality 3D printing services and solutions to meet your diverse needs. Contact us now!"
-				/>
+				<title>The Supphire</title>
+				<meta name="description" content="The Supphire | Damac Properties" />
 			</Head>
 			<section className="w-full">
 				<Hero
