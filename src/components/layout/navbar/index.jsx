@@ -1,6 +1,5 @@
 import NavLink from "./navlink";
 import BurgerMenu from "./burgerMenu";
-import Submenu from "./submenu";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";

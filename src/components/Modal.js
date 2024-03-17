@@ -33,52 +33,33 @@ const Modal = ({ isOpen, onClose }) => {
 		onClose();
 	};
 	const handleModalContentClick = (event) => {
-		// Prevent the click event from propagating to the overlay
 		event.stopPropagation();
 	};
 
 	return (
 		<>
-			<div className=" rounded-lg bg-transparent">
-				{isOpen && (
+			{isOpen && (
+				<section
+					onClick={onClose}
+					className="cursor-pointer fixed w-full h-full z-[51] flex items-center justify-center backdrop-blur-[5px] bg-black/50"
+				>
 					<motion.div
-						className="modal-overlay  "
-						style={{
-							display: isOpen ? "flex" : "none",
-
-							justifyContent: "center", // Center the modal content horizontally
-							alignItems: "center", // Center the modal content vertically
-							width: "100vw", // Cover the full viewport width
-							height: "100vh", // Cover the full viewport height
-						}}
-						onClick={onClose}
-						initial={{ opacity: 0, translateY: 1200 }}
-						animate={{ opacity: 1, translateY: 0 }}
-						transition={{ duration: 1 }}
-						exit={{ opacity: 0, translateY: 1200 }}
+						className="modal-content border border-zinc-600 relative bg-black text-white  p-10 rounded-lg cursor-default"
+						onClick={handleModalContentClick}
+						initial={{ opacity: 0, scale: 0 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 0.5 }}
 					>
-						<motion.div
-							className="modal-content border-2 relative" // Ensure this parent div is positioned relatively
-							onClick={handleModalContentClick}
-							initial={{ opacity: 0, scale: 0 }}
-							animate={{ opacity: 1, scale: 1 }}
-							transition={{ duration: 1 }}
-							style={{
-								backgroundColor: "transparent", // Ensure the form box has no background
-							}}
+						<button
+							onClick={onClose}
+							className="absolute text-2xl top-3 right-3"
 						>
-							<button
-								onClick={onClose}
-								className="modal-close-btn text-yellow-500 text-2xl  absolute top-3 right-3"
-							>
-								X
-							</button>
-							{/* Close button */}
-							<Quote title={"Contact Us"} />
-						</motion.div>
+							X
+						</button>
+						<Quote />
 					</motion.div>
-				)}
-			</div>
+				</section>
+			)}
 		</>
 	);
 };

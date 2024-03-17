@@ -2,10 +2,8 @@ import "@/styles/globals.css";
 import Layout from "@/components/layout/layout";
 import type { AppProps } from "next/app";
 import "animate.css";
-import { Toaster } from "react-hot-toast";
 import { Red_Hat_Display } from "next/font/google";
 import Head from "next/head";
-import { MicrosoftClarity } from "../components/MicrosoftClarity";
 const font = Red_Hat_Display({
 	subsets: ["latin"],
 	weight: ["300", "400", "500", "500", "600", "700", "800", "900"],
@@ -63,9 +61,7 @@ export default function App({ Component, pageProps }: AppProps) {
 					content="3D Printing Dubai, 3d printing service, 3d printing near me, 3D Scanning services, 3d print service, 3D Printing company"
 				/>
 			</Head>
-			<MicrosoftClarity />
 			<Layout>
-				<Toaster />
 				<Component {...pageProps} />
 			</Layout>
 		</div>
