@@ -8,21 +8,16 @@ import Modal from "../../Modal";
 export default function Navbar() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	const openModal = () => {
-		setIsModalOpen(true);
-	};
+	const openModal = () => setIsModalOpen(true);
 
-	const closeModal = () => {
-		setIsModalOpen(false);
-	};
+	const closeModal = () => setIsModalOpen(false);
 
 	const [hasScrolled, setHasScrolled] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
-	const closeMenu = () => {
+	const closeMenu = () =>
 		setTimeout(() => {
 			setIsOpen(false);
 		}, 800);
-	};
 	const [open, setOpen] = useState(false);
 
 	const navbarClasses = `navbar text-white fixed top-0 left-0 right-0 z-[51] w-full flex items-center justify-between px-10 ${
@@ -31,16 +26,12 @@ export default function Navbar() {
 
 	const toggleMenu = () => setIsOpen(!isOpen);
 
-	const handleScroll = () => {
-		setHasScrolled(window.scrollY > 0);
-	};
+	const handleScroll = () => setHasScrolled(window.scrollY > 0);
 
 	useEffect(() => {
 		window.addEventListener("scroll", handleScroll);
 
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
 	return (
@@ -204,13 +195,6 @@ export default function Navbar() {
 								</svg>
 							)}
 						</div>
-
-						<NavLink href="/projects" onClick={closeMenu}>
-							Projects
-						</NavLink>
-						<NavLink href="/about" onClick={closeMenu}>
-							About Us
-						</NavLink>
 
 						<div className="flex animate__animated animate__tada">
 							<button className="rounded-3xl w-32 h-11 mx-auto mt-16 bg-[#d49d3e] hover:bg-yellow-600 transition-all">

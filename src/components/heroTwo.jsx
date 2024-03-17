@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import Image from "next/image";
 
@@ -70,7 +69,7 @@ const GridCard = () => {
 	];
 
 	return (
-		<div className="absolute  inset-0 flex justify-center items-center top-0 ">
+		<div className="absolute inset-0 flex justify-center items-center top-0">
 			<div className="grid grid-cols-3 gap-0 p-5 bg-opacity-20 bg-white backdrop-blur-sm absolute top-96">
 				{animatedPinDemo.map((card, index) => (
 					<AnimatedPinDemo key={index} {...card} />

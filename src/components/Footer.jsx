@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
 	return (
 		<div>
@@ -9,7 +7,7 @@ const Footer = () => {
 						<img
 							src="https://res.cloudinary.com/dcpte972l/image/upload/v1710671750/Untitled_design_5_hhozvq.png"
 							alt=""
-                            className=" h-40 w-40"
+							className=" h-40 w-40"
 						/>
 					</div>
 

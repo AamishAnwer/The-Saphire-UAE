@@ -14,10 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div className={font.className}>
 			<Head>
-				<meta
-					name="google-site-verification"
-					content="t9mtLQhzIa73Rzrvzh4vZ8_5qS_1qHUftO4e8OL5cvs"
-				/>
 				<title>
 					Welcome to the leading 3D printing services provider in Dubai. We
 					offer high-quality 3D printing and scanning services near you. Contact

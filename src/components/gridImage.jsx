@@ -5,11 +5,8 @@ import { LayoutGrid } from "./ui/layout-grid";
 function LayoutGridDemo() {
 	return (
 		<div
-			className="h-screen relative py-20 w-full"
+			className="h-auto pt-12 w-full"
 			style={{
-				backgroundImage: `url(
-					""
-				)`,
 				backgroundSize: "cover",
 				backgroundPosition: "center",
 			}}
