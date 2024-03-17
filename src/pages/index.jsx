@@ -1,10 +1,12 @@
 import Hero from "@/components/hero";
 import Head from "next/head";
 import HeroTwo from "../components/heroTwo";
-import HomeGrid from "../components/home/grid";
+import GridImage from "../components/gridImage";
 import TextImage from "../components/textImage";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import Grid from "../components/home/grid";
+import GetInTouch from "../components/getInTouch";
 
 export default function Home() {
 	return (
@@ -26,9 +28,11 @@ export default function Home() {
 				/>
 
 				<HeroTwo />
-				<HomeGrid />
+				<Grid />
 				<TextImage />
+				<GridImage />
 				<About />
+				<GetInTouch />
 				<Footer />
 			</section>
 		</>
