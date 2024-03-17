@@ -17,7 +17,7 @@ const AnimatedPinDemo = ({ title, description, image }) => {
 					<div className="text-base !m-0 !p-0 font-normal text-center">
 						<span className="text-slate-100  text-xl ">{description}</span>
 					</div>
-					<div className="flex  flex-1 w-full rounded-lg mt-4">
+					<div className="flex  flex-1 w-full rounded-lg  mt-4">
 						<Image src={image} width={400} height={200} alt="bb" />
 					</div>
 				</div>
@@ -25,17 +25,6 @@ const AnimatedPinDemo = ({ title, description, image }) => {
 		</div>
 	);
 };
-
-// // Card component
-// const Card = ({ title, description, image }) => {
-//   return (
-//     <div className="flex flex-col items-center justify-center p-4">
-//       <img src={image} alt={title} className="h-32 w-32 mb-2" />
-//       <h2 className="text-white text-lg font-semibold mb-1">{title}</h2>
-//       <p className="text-white text-sm text-center">{description}</p>
-//     </div>
-//   );
-// };
 
 // GridCard component
 const GridCard = () => {
@@ -81,8 +70,8 @@ const GridCard = () => {
 	];
 
 	return (
-		<div className="absolute  inset-0 flex justify-center items-center mt-20">
-			<div className="grid grid-cols-3   gap-0">
+		<div className="absolute  inset-0 flex justify-center items-center top-0 ">
+			<div className="grid grid-cols-3 gap-0 p-5 bg-opacity-20 bg-white backdrop-blur-sm absolute top-96">
 				{animatedPinDemo.map((card, index) => (
 					<AnimatedPinDemo key={index} {...card} />
 				))}
@@ -94,7 +83,7 @@ const GridCard = () => {
 // Main HeroTwo component
 const HeroTwo = () => {
 	return (
-		<div className="relative  flex justify-center items-center">
+		<div className="relative  flex justify-center items-center ">
 			<img
 				className="h-screen md:h-auto object-cover brightness-75"
 				src="https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg"
@@ -108,7 +97,7 @@ const HeroTwo = () => {
 				src="https://res.cloudinary.com/dcpte972l/image/upload/v1710584735/logotwow-removebg-preview_jmxvtc.png"
 				alt=""
 			/>
-			<span className="absolute md:top-96 text-white luxury tracking-widest text-2xl md:text-6xl">
+			<span className="absolute md:top-72 text-white luxury tracking-widest text-2xl md:text-6xl">
 				LUXURY LIVING COMES TO LIGHT
 			</span>
 			<img

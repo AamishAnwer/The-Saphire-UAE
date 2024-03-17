@@ -16,8 +16,8 @@ const About = () => {
 							</div>
 						</div>
 
-						<div className="relative flex items-center bg-gray-100">
-							<span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
+						<div className="relative flex items-center bg-gray-300 ">
+							<span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-300"></span>
 
 							<div className="p-8 sm:p-16 lg:p-24">
 								<h2 className="text-2xl font-bold sm:text-3xl">About Us</h2>
