@@ -12,6 +12,7 @@ import HeroTwo from "../components/heroTwo";
 import heroThree from "../components/heroThree";
 import BodyCard from "../components/bodyCard";
 // import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
+import TextImage from "../components/textImage";
 
 export default function Home() {
 	const [randomText, setRandomText] = useState("");
@@ -66,6 +67,7 @@ export default function Home() {
 
 				{/* <BackgroundGradientAnimation /> */}
 				<HeroTwo />
+				<TextImage />
 				<BodyCard
 					src={
 						"https://res.cloudinary.com/dcpte972l/image/upload/v1710624834/roof_view_pgsird.jpg"
