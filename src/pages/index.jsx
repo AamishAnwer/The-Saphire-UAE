@@ -5,19 +5,17 @@ import GridImage from "../components/gridImage";
 import TextImage from "../components/textImage";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import Grid from "../components/home/grid";
+// import Grid from "../components/home/grid";
 import GetInTouch from "../components/getInTouch";
 
 export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>
-					3D Printing Dubai | Avail 3D Printing Service in Dubai With Ultratec
-				</title>
+				<title>The Sapphire</title>
 				<meta
 					name="description"
-					content="Ultratec 3D, the premier 3D printing company in Dubai, provides high-quality 3D printing services and solutions to meet your diverse needs. Contact us now!"
+					content=""
 				/>
 			</Head>
 			<section className="w-full">
@@ -28,7 +26,7 @@ export default function Home() {
 				/>
 
 				<HeroTwo />
-				<Grid />
+				{/* <Grid /> */}
 				<TextImage />
 				<GridImage />
 				<About />

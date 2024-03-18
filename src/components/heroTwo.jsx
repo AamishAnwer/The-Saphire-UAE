@@ -5,10 +5,7 @@ import Image from "next/image";
 const AnimatedPinDemo = ({ title, description, image }) => {
 	return (
 		<div className="h-[20rem] w-full flex items-center justify-center ">
-			<PinContainer
-				title="/ui.aceternity.com"
-				href="https://twitter.com/mannupaaji"
-			>
+			<PinContainer title="The Sapphire" href="">
 				<div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[17rem] h-[17rem] ">
 					<h3 className="max-w-xs !pb-2 !m-0 font-bold  text-xl text-center text-slate-100">
 						{title}
@@ -16,7 +13,7 @@ const AnimatedPinDemo = ({ title, description, image }) => {
 					<div className="text-base !m-0 !p-0 font-normal text-center">
 						<span className="text-slate-100  text-xl ">{description}</span>
 					</div>
-					<div className="flex  flex-1 w-full rounded-lg  mt-4">
+					<div className="flex  flex-1 w-full rounded-lg  mt-4 ">
 						<Image src={image} width={400} height={200} alt="bb" />
 					</div>
 				</div>
@@ -29,40 +26,41 @@ const AnimatedPinDemo = ({ title, description, image }) => {
 const GridCard = () => {
 	const animatedPinDemo = [
 		{
-			title: "Card 1",
-			description: "Description for card 1",
+			title: "Luxury Apartments",
+			description: "",
 			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710737714/04.Master_Bed_Room_daygjb.jpg",
+		},
+
+		{
+			title: "Spa",
+			description: "",
+			image:
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710738191/Screenshot_2024-03-18_090240_xnsvsq.png",
 		},
 		{
-			title: "Card 2",
-			description: "Description for card 2",
+			title: "24/7 Gym Access",
+			description: "",
 			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710737722/7_ty53at.jpg",
 		},
 		{
-			title: "Card 3",
-			description: "Description for card 1",
+			title: "Penthouse Horizon View",
+			description: "",
 			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710737719/02.Stair_View_nsed37.jpg",
 		},
 		{
-			title: "Card 4",
-			description: "Description for card 2",
+			title: "Canary Garden",
+			description: "",
 			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710738713/Screenshot_2024-03-18_091054_inakmi.png",
 		},
 		{
-			title: "Card 5",
-			description: "Description for card 1",
+			title: "Luxury Lobbies",
+			description: "",
 			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
-		},
-		{
-			title: "Card 6",
-			description: "Description for card 2",
-			image:
-				"https://res.cloudinary.com/dcpte972l/image/upload/v1710619649/SAFA_park_aerial_rexl3m.jpg",
+				"https://res.cloudinary.com/dcpte972l/image/upload/v1710737723/Screenshot_2024-03-18_085230_zei1ny.png",
 		},
 
 		// Add more card data here...

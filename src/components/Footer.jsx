@@ -11,12 +11,7 @@ const Footer = () => {
 						/>
 					</div>
 
-					<p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-black">
-						R E M REAL ESTATE BROKER OWNED BY MUNA SAYED SAEED ALHASHEMI ONE
-						PERSON CO L.L.C.
-					</p>
-
-					<ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+					<ul className="mt-2 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
 						<li>
 							<a
 								className="text-black transition hover:text-yellow-500"
@@ -24,16 +19,6 @@ const Footer = () => {
 							>
 								{" "}
 								About{" "}
-							</a>
-						</li>
-
-						<li>
-							<a
-								className="text-black transition hover:text-yellow-500"
-								href="#"
-							>
-								{" "}
-								Careers{" "}
 							</a>
 						</li>
 
@@ -66,7 +51,15 @@ const Footer = () => {
 								Projects{" "}
 							</a>
 						</li>
-
+						<li>
+							<a
+								className="text-black transition hover:text-yellow-500"
+								href="#"
+							>
+								{" "}
+								Careers{" "}
+							</a>
+						</li>
 						<li>
 							<a
 								className="text-black transition hover:text-yellow-500"
